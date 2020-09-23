@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hunter Haller</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Header and footer are pulled from separate files to make for easier future edits -->
+  <script>
+    $(function() {
+          $("#header").load("header.html");
+          });
+
+        $(function() {
+          $("#footer").load("footer.html");
+        });
+  </script>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- This div contains the header image(s) and navigation bar -->
+  <div id="header">
+  </div>
+
+  <!-- This div contains all the main info of the page, such as intro text -->
+  <div id="body">
+    <div id="profile-holder">
+      <img id="profile-pic" src="img/profile-site.png" alt="A picture of my face.">
+      <div id="profile-text">
+        <p>Hunter Haller</p>
+        <p>BSTAM / CS minor</p>
+        <p>Aspiring web developer</p>
+        <p>Thornton, CO</p>
+      </div>
+    </div>
+    <h1 id="greeting">Hi there!</h1>
+    <p>Thanks for visiting my site! I'm a recent graduate of CU Boulder with a degree in Technology, Arts, and Media. I'm looking to get more experience in front-end web development, both in jobs and in continued personal practice.</p>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-165340104-2', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

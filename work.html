@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hunter Haller</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Header and footer are pulled from separate files to make for easier future edits -->
+  <script>
+    $(function() {
+      $("#header").load("header.html");
+    });
+
+    $(function() {
+      $("#footer").load("footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- This div contains the header image(s) and navigation bar -->
+  <div id="header">
+  </div>
+
+  <!-- This div contains all the main info of the page, such as intro text -->
+  <div id="body">
+    <h1 id="greeting">My Work</h1>
+    <p><strong>Notable School Projects</strong></p>
+    <ul>
+      <li><strong>Steadfast Station (Spring 2020)</strong>
+        <br><br>
+        <img src="img/build-ui2.gif" alt="" id="steadfast-gif">
+        <p>A game designed and built completely for the web! This was my capstone project to finish off my degree.</p>
+        <p>Take on the role of a space station technician and tackle problems in orbit. The game simulates the operating system that the character would use, transforming your own desktop with draggable/closeable windows, icons, a command terminal, and a chat window.</p>
+        <p>Visually built on HTML and CSS, mechanically built on JavaScript and JQuery.</p>
+        <p>Utilizes the <a href="https://terminal.jcubic.pl/">JQuery Terminal</a> plugin.</p>
+        <p><a href="https://github.com/huntinghollers/steadfast-station">GitHub repo</a></p>
+        <a href="https://hunterhaller.com/projects/steadfast/" target="_blank">Playable here!</a> (Best played in fullscreen on a desktop. Not built for mobile devices!)</li>
+    </ul>
+    <p><strong>Less Than Notable School Projects</strong></p>
+    <ul>
+      <li><strong><a href="https://creative.colorado.edu/~huha3374/index.html" target="_blank">Personal Website Project (Fall 2018)</a></strong>
+      <p>Personal intro site built for Web, a foundational class I took for my degree. The site is simply built to showcase basic info about  myself, some projects I had worked, and a simple resume.</p></li>
+      <li><strong><a href="https://creative.colorado.edu/~huha3374/web/">Web Project Index (Fall 2018)</a></strong>
+      <p>Portal with links to projects for Web class. Labs were made practicing with simple web topics, including semantics, images, basic JavaScript, and a CSS Zen Garden implementation.</p></li>
+      <li><strong><a href="https://creative.colorado.edu/~huha3374/FWD/" target="_blank">Front-end Web Class Portal (Fall 2019)</a></strong>
+      <p>Personal project portal made for Front-end Web Development, a class I took for my degree. Includes links to homework assignments practicing with JQuery, forms, React, and more.</p></li>
+      <li><strong><a href="https://creative.colorado.edu/~huha3374/dev/" target="_blank">Creative Web Development Class Portal (Spring 2020)</a></strong>
+      <p>Personal project portal made for Creative Web Development, a class I took for my degree. Includes links to assignments practicing with parallax scrolling, A-Frame, AngularJS, and others.</p>
+      <p>This class also covered Git/GitHub usage and creating a custom <a href="https://html5boilerplate.com/" target="_blank">HTML Boilerplate</a>.</p></li>
+    </ul>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-165340104-2', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
